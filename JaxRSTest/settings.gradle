@@ -15,4 +15,8 @@ include 'api'
 include 'services:webservice'
 */
 
+//include ':itmdutilities_3'
+include ':itmdutil'
+//project(':itmdutil').projectDir = new File(settingsDir, '../itmdutil')
+
 rootProject.name = 'JaxRSTest'
