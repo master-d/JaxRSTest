@@ -13,11 +13,16 @@ import jrs.rest.SampleSvc;
 
 
 @ApplicationPath("api")
-public class RestApp extends Application {
+public class RestApp extends ResourceConfig {
+	/*
 	@Override
 	public Set<Class<?>> getClasses() {
 		Set<Class<?>> classes = new HashSet<>();
 		classes.add(SampleSvc.class);
 		return classes;
+	}
+	*/
+	public RestApp() {
+		this.register(SampleSvc.class);
 	}
 }
