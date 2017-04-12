@@ -16,7 +16,10 @@ include 'services:webservice'
 */
 
 //include ':itmdutilities_3'
-include ':itmdutil'
-project(':itmdutil').projectDir = new File(settingsDir, '../../itmdutil/itmdutil')
+//project(':itmdutilities_3').projectDir = new File('/home/raricha/workspace-neon-tomcat/itmdutilities_3/')
 
+//include ':itmdutil'
+//project(':itmdutil').projectDir = new File(settingsDir, '../../itmdutil/itmdutil')
+
+//includeBuild '../../itmdutil'
 rootProject.name = 'JaxRSTest'

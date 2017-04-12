@@ -3,6 +3,7 @@
 	<name>JaxRSTest</name>
 	<comment></comment>
 	<projects>
+		<project>itmdutilities_3</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

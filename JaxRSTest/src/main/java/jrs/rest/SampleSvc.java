@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 
 import enotify.beans.EnotifyCategory;
 import enotify.beans.SmsCarrier;
+import jrs.beans.SanPickup;
 
 @Path("")
 public class SampleSvc {
@@ -45,6 +46,25 @@ public class SampleSvc {
 			return null;
 		}
 	}
+	@GET
+	@Path("san/{route}")
+	@Produces({MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML})
+	public SanPickup san(@PathParam("route") String route) {
+		try {
+			SanPickup sp = new SanPickup();
+			sp.setRoute(route);
+			sp.setRouteType("Garbage");
+			sp.setSchedule("3W");
+			sp.setScheduleType("double");
+			sp.setPickupDate(new java.util.Date());
+			System.out.println(sp.toString());
+			return sp;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
 //*/
 	
 	
